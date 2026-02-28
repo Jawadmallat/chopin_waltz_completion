@@ -1,0 +1,106 @@
+# ============================================
+# Chopin Waltz Completion Project - .gitignore
+# ============================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# ---------- Virtual Environments ----------
+venv/
+env/
+.env
+.venv
+
+# ---------- Jupyter Notebooks ----------
+.ipynb_checkpoints/
+*.ipynb_metadata/
+
+# ---------- PyTorch & Model Checkpoints ----------
+# These files are huge (100MB–2GB+). Host on Hugging Face Hub instead.
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+models/chopin-waltz-fine-tuned/
+checkpoints/
+
+# ---------- Hugging Face Cache ----------
+.cache/
+huggingface/
+
+# ---------- Training Outputs ----------
+runs/
+wandb/
+logs/
+*.log
+tensorboard/
+
+# ---------- Large Data Files ----------
+# Augmented and tokenized data can be regenerated from raw files
+data/augmented/
+data/tokenized/
+chopin_chunks/
+chopin_waltzes_augmented/
+
+# ---------- MIDI files (uncomment if licensing requires it) ----------
+# If your raw MIDI files are from a commercial source, uncomment these:
+# data/raw/*.mid
+# data/raw/*.midi
+
+# ---------- Generated Candidates ----------
+# Keep only your final curated results in version control
+# results/candidates/
+
+# ---------- Google Colab / Drive ----------
+.colab/
+*.gdoc
+*.gsheet
+sample_data/
+
+# ---------- OS Files ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# ---------- IDE / Editor ----------
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ---------- LaTeX Build Artifacts ----------
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.synctex(busy)
+
+# ---------- Audio Renders ----------
+# Generated audio previews (WAV/MP3 from MIDI), can be regenerated
+*.wav
+*.mp3
+*.flac
+
+# ---------- Miscellaneous ----------
+*.zip
+*.tar.gz
+*.7z
