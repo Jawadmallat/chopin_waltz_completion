@@ -1,0 +1,105 @@
+{
+  "corpus_size": 19,
+  "note_count": {
+    "mean": 1894.1052631578948,
+    "std": 968.3772587351774,
+    "min": 487,
+    "max": 4418
+  },
+  "duration_sec": {
+    "mean": 185.46684210526314,
+    "std": 71.54744249006951,
+    "min": 63.68,
+    "max": 336.98
+  },
+  "pitch": {
+    "mean": 65.07674780482382,
+    "std": 11.65704444005141,
+    "min": 25,
+    "max": 101
+  },
+  "velocity": {
+    "mean": 72.19764921640547,
+    "std": 21.588000539350013
+  },
+  "notes_per_second": {
+    "mean": 10.452105263157895,
+    "std": 3.640346396108001
+  },
+  "top_intervals": [
+    {
+      "semitones": -2,
+      "frequency": 0.1466
+    },
+    {
+      "semitones": 1,
+      "frequency": 0.1029
+    },
+    {
+      "semitones": -1,
+      "frequency": 0.0951
+    },
+    {
+      "semitones": 2,
+      "frequency": 0.0889
+    },
+    {
+      "semitones": 0,
+      "frequency": 0.088
+    },
+    {
+      "semitones": 3,
+      "frequency": 0.0388
+    },
+    {
+      "semitones": 4,
+      "frequency": 0.0335
+    },
+    {
+      "semitones": -3,
+      "frequency": 0.0328
+    },
+    {
+      "semitones": 5,
+      "frequency": 0.0322
+    },
+    {
+      "semitones": -5,
+      "frequency": 0.0272
+    },
+    {
+      "semitones": -12,
+      "frequency": 0.0211
+    },
+    {
+      "semitones": -9,
+      "frequency": 0.0202
+    },
+    {
+      "semitones": 9,
+      "frequency": 0.0201
+    },
+    {
+      "semitones": -4,
+      "frequency": 0.0196
+    },
+    {
+      "semitones": 7,
+      "frequency": 0.0194
+    }
+  ],
+  "key_distribution": {
+    "major": 13,
+    "minor": 6
+  },
+  "lost_waltz": {
+    "num_notes": 536,
+    "duration_sec": 54.25,
+    "velocity_mean": 100.8,
+    "pitch_range": [
+      33,
+      89
+    ],
+    "notes_per_second": 9.88
+  }
+}
