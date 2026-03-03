@@ -1,0 +1,59 @@
+{
+  "phase": "Phase 2: Tokenization & Data Preparation",
+  "tokenizer": {
+    "source": "Natooz/Maestro-REMI-bpe20k",
+    "type": "REMI + BPE",
+    "vocab_size": 20000,
+    "saved_to": "../models/tokenizer.json"
+  },
+  "data_split": {
+    "train_waltzes": [
+      "Waltz_10_op69no2-in-B-minor.mid",
+      "Waltz_11_op70no1-in-Gb-major.mid",
+      "Waltz_12_op70no2-in-F-minor.mid",
+      "Waltz_13_op70no3-in-Db-major.mid",
+      "Waltz_14_B56-in-E-minor.mid",
+      "Waltz_17_B46-in-Eb-major.mid",
+      "Waltz_19_B150-in-A-minor.mid",
+      "Waltz_1_op18-in-Eb-major.mid",
+      "Waltz_2_op34no1-in-Ab-major.mid",
+      "Waltz_3_op34no2-in-A-minor.mid",
+      "Waltz_4_op34no3-in-F-major.mid",
+      "Waltz_5_op42-in-Ab-major.mid",
+      "Waltz_6_op64no1-in-Db-major.mid",
+      "Waltz_7_op64no2-in-C#-minor.mid",
+      "Waltz_8_op64no3-in-Ab-major.mid",
+      "Waltz_9_op69no1-in-Ab-major.mid"
+    ],
+    "valid_waltzes": [
+      "Waltz_15_B44-in-E-major.mid",
+      "Waltz_16_B21-in-Ab-major.mid",
+      "Waltz_18_B133-in-Eb-major.mid"
+    ],
+    "lost_waltz": "New_Chopin_Waltz_.mid (excluded from training)"
+  },
+  "chunking": {
+    "max_seq_len": 1024,
+    "num_overlap_bars": 2
+  },
+  "augmentation": {
+    "applied_to": "training set only",
+    "pitch_offsets": [
+      -12,
+      12
+    ],
+    "velocity_offsets": [
+      -4,
+      4
+    ],
+    "duration_offsets": [
+      -0.5,
+      0.5
+    ]
+  },
+  "output": {
+    "train_chunks": 643,
+    "valid_chunks": 6,
+    "seed_file": "/Users/jawadmallat/Desktop/Chopin_Waltz_Completion/data/seed/lost_waltz_tokens.json"
+  }
+}
